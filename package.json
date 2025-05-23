@@ -1,0 +1,22 @@
+{
+  "name": "IncoTestnet",
+  "version": "1.0.0",
+  "description": "IncoTestnet Auto Wrapper for Ethers.js",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "keywords": [
+    "ethers",
+    "web3",
+    "staking",
+    "auto-wrap",
+    "token"
+  ],
+  "author": "isanbayo",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^5.8.0",
+    "dotenv": "^16.4.5"
+  }
+}
