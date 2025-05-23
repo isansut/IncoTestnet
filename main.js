@@ -48,15 +48,15 @@ async function runForWallet(walletData) {
     await approveTx.wait();
     console.log(`Wallet ${to}: Approve success! TxHash: ${approveTx.hash}`);
 
-    console.log(`Wallet ${to}: Shiled 1.000.000 USDC...`);
+    console.log(`Wallet ${to}: Shield 1.000.000 USDC...`);
     const wrapTx = await cusdcContract.wrap(mintAmount);
     await wrapTx.wait();
-    console.log(`Wallet ${to}: Shiled success! TxHash: ${wrapTx.hash}`);
+    console.log(`Wallet ${to}: Shield success! TxHash: ${wrapTx.hash}`);
 
-    console.log(`Wallet ${to}: UnShiled 500.000 USDC...`);
+    console.log(`Wallet ${to}: UnShield 500.000 USDC...`);
     const unwrapTx = await cusdcContract.unwrap(unwrapAmount);
     await unwrapTx.wait();
-    console.log(`Wallet ${to}: UnShiled success! TxHash: ${unwrapTx.hash}`);
+    console.log(`Wallet ${to}: UnShield success! TxHash: ${unwrapTx.hash}`);
 
   } catch (error) {
     console.error(`Wallet ${to}: Error -`, error);
